@@ -1,19 +1,19 @@
 package pack;
 
-public class stack {
-	private int[] stak;
+public class personStack {
+	private person[] stak;
 	private int top;
 	private int size;
 	
-	public stack(int size) {
+	public personStack(int size) {
 		this.size=size;
 		this.top=-1;
-		stak=new int[this.size];
+		stak=new person[this.size];
 	}
-	public stack() {
+	public personStack() {
 		this.size=20;
 		this.top=-1;
-		stak=new int[size];
+		stak=new person[size];
 	}
 	
 	public boolean isEmpty() {
@@ -34,7 +34,7 @@ public class stack {
 		}
 	}
 	
-	public void push(int a) {
+	public void push(person a) {
 		if(isFull()) {
 			
 			System.out.println("Out Of Memory");
@@ -44,8 +44,8 @@ public class stack {
 		}
 	}
 	
-	public int pop() {
+	public person pop() {
 		return stak[top--];
 	}
-	
+
 }
