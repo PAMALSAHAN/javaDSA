@@ -1,0 +1,6 @@
+enque= adding to elements to the queue
+dequeue= removing element from the queue
+
+rear = tail of the queque if we remove element from the queue rear increments
+front=when adding to the queue front increments
+

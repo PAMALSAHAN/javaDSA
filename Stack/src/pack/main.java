@@ -21,8 +21,12 @@ public class main {
 		ps.push(p2);
 		ps.push(p3);
 		
-		//
-		System.out.println(ps.pop());
+		//ps.pop() will retur a person object eg pack.person@15db9742 
+		//if we use person class with this we can do what we need
+		// so this will print 23 
+		//if we want to print object detail we need to use getPerson() function
+		System.out.println(ps.pop().getNum());
+		
 		
 		
 	}

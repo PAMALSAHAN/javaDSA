@@ -14,7 +14,7 @@ public class person {
 		return ("My name is "+this.name+" age is "+this.age+" my field is "+this.field);
 	}
 	
-	public int getNum() {
+	public int  getNum() {
 		return 23;
 	}
 
