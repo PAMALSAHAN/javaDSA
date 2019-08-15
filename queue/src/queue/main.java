@@ -33,7 +33,7 @@ public class main {
 		Q1.enqueue(p3);
 		Q1.enqueue(p4);
 		Q1.dequeue().getperson();
-		Q1.dequeue().getperson();
+		 Q1.dequeue().getperson();
 		Q1.enqueue(p5);
 		Q1.enqueue(p6);
 		Q1.enqueue(p7);
