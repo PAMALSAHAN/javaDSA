@@ -1,20 +1,22 @@
 package linkList;
 
-public class linkList {
-	private Node root;
+import linkList.linkList.Node;
+
+public class personLinkList {
+private Node root;
 	
 	class Node {
-		private int value;
+		private person value;
 		private Node link;
 	}
 	
-	public linkList(int item) {
+	public personLinkList(person item) {
 		root=new Node();
 		root.value=item;
 		root.link=null;
 	}
 	
-	public boolean createNode(int val) {
+	public boolean createNode(person val) {
 		Node n=new Node();
 		n.value=val;
 		n.link=root;
@@ -25,13 +27,13 @@ public class linkList {
 	public void printList() {
 		Node h=root;
 		while(h!=null) {
-			System.out.println(h.value);
+			h.value.getperson();
 			h=h.link;
 			
 		}
 	}
 	
-	public boolean deleteNode(int item) {
+	public boolean deleteNode(person item) {
 		Node x=root;
 		Node y=root;
 		if(root.value==item) {
@@ -51,7 +53,7 @@ public class linkList {
 		return false;
 	}
 	
-	public boolean insertLast(int item) {
+	public boolean insertLast(person item) {
 		Node n=new Node();
 		n.value=item;
 		Node x=root;
@@ -61,7 +63,4 @@ public class linkList {
 		x.link=n;
 		return true;
 	}
-	
-	
-
 }
