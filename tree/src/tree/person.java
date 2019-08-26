@@ -10,6 +10,13 @@ public class person {
 		this.age=age;
 		this.qulity=qulity;
 	}
+	
+	public String getName() {
+		return name;
+	}
+	public int getAge() {
+		return age;
+	}
 	public void getperson(){
 		System.out.println("my name is :"+this.name+ "and my age is :"+this.age+"and i have qulity :"+this.qulity);
 	}
