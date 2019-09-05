@@ -24,11 +24,11 @@ public class bst {
 			node c=root;
 			while(c!=null) {
 				p=c;
-				if(item.getName().compareTo(c.value.getName())>0) {
-					c=c.right;
+				if(item.getName().compareTo(c.value.getName())<0) {
+					c=c.left;
 				}
 				else {
-					c=c.left;
+					c=c.right;
 				}
 			}
 			if(item.getName().compareTo(p.value.getName())<0) {
@@ -45,11 +45,28 @@ public class bst {
 	public void showAll(node n) {
 		node p=n;
 		if(p!=null) {
-			System.out.println(""+p.value);
+			p.value.getperson();
 			showAll(p.left);
 			showAll(p.right);
 			
 		}
+	}
+	
+	public node findNode(String key) {
+		node c;
+		c=root;
+		while(c!=null) {
+			if(key.compareTo(c.value.getName())==0) {
+				break;
+			}
+			if(key.compareTo(c.value.getName())<0){
+				c=c.left;
+			}
+			else {
+				c=c.right;
+			}
+		}
+		return c;
 	}
 
 }
