@@ -66,7 +66,40 @@ public class bst {
 				c=c.right;
 			}
 		}
+		
 		return c;
 	}
+	
+	public node findParent(String key) {
+		node c=root;
+		node p=root;
+		while(c!=null) {
+			
+			if(key.compareTo(c.value.getName())==0) {
+				break;
+			}
+			p=c;
+			if(key.compareTo(c.value.getName())<0) {
+				c=c.left;
+			}
+			else {
+				c=c.right;
+			}
+			
+		}
+		if(c!=null) {
+			return p;
+		}
+		else {
+			return null;
+		}
+	}
+	
+	public person getData(node n) {
+		return n.value;
+	}
+	
+	
+
 
 }

@@ -17,7 +17,10 @@ public class main {
 		bst1.insert(p5);
 		
 		
-		bst1.showAll(bst1.findNode("pamal"));
+		//bst1.showAll(bst1.findNode("pamal"));
+		person c=bst1.getData(bst1.findParent("nuwan "));
+		c.getperson();
+		
 	}
 			
 }
