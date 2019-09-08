@@ -28,5 +28,9 @@ public class student {
 	public void setSchool(String s) {
 		this.school=s;
 	}
+	public void getPersonInfo() {
+		System.out.println("My name is "+this.name +"My age is "+this.age+"My school is "+this.school);
+		
+	}
 
 }
