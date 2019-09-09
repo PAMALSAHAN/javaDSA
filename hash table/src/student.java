@@ -3,6 +3,7 @@ public class student {
 	private String name;
 	private int age;
 	private String school;
+	private String roll_no;
 	
 	public student(String n,int a,String s) {
 		this.name=n;
@@ -31,6 +32,12 @@ public class student {
 	public void getPersonInfo() {
 		System.out.println("My name is "+this.name +"My age is "+this.age+"My school is "+this.school);
 		
+	}
+	public void setRollNo(String rollNo) {
+		this.roll_no=rollNo;
+	}
+	public String getRollNo() {
+		return roll_no;
 	}
 
 }
