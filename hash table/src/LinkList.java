@@ -16,7 +16,7 @@ public class LinkList {
 	public boolean insert(student s) {
 		node p=new node();
 		p.value=s;
-		p.next=h.next;
+		p.next=h.next;  //mehtanadi wenne aluth node ekak mulata set wena eka thamai
 		h.next=p;
 		
 		return true;
@@ -49,10 +49,27 @@ public class LinkList {
 		return data;
 	}
 	
-    public student deleteData(String rollNo) {
+    public void deleteData(String rollNo) {
     	node p=h;
     	node q=h.next;
+    	while(q!=null && !(q.value.getRollNo().equals(rollNo))) {
+    		p=q;
+    		q=q.next;
+    	}
+    	if(q!=null) {
+    		p.next=q.next;
+    	}
+    	else {
+    		//no data;
+    	}
     	
-    	
+    }
+    
+    public void selectAll() {
+    	node p=h.next;
+    	while(p!=null) {
+    		p.value.getPersonInfo();
+    		p=p.next;
+    	}
     }
 }

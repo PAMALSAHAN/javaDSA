@@ -18,4 +18,21 @@ public class hashTable {
 		codevalue=addasciis %arr.length;
 		return codevalue;
 	}
+	
+	public boolean insert(int key,student data) {
+		if(arr[key]==null) {
+			arr[key]=new LinkList(); //root eka set karaganna eka thmai karanne.
+		}
+		arr[key].insert(data);
+		totalStudents++;
+		return true;
+	}
+	
+	public int getTotal() {
+		return totalStudents;
+	}
+	
+	public student 
+	
+	
 }
