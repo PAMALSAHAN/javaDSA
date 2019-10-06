@@ -32,7 +32,26 @@ public class hashTable {
 		return totalStudents;
 	}
 	
-	public student 
+	public student fetchStdInfo(String rollNo) {
+		int key=toHashCode(rollNo);
+		if(arr[key]==null) {
+			return null;
+		}else {
+			student q=arr[key].fetchData(rollNo);
+			if(q != null) {
+				return q;
+			}else {
+				return null;
+			}
+		}
+	}
 	
+	public boolean deleteStd(String rollNo) {
+		boolean have=arr[toHashCode(rollNo)].haveRoleNo(rollNo); //haveRoleNo check whether role nomberis having or not
+		if(have) {
+			int key=toHashCode(rollNo);
+			arr[key].deleteData(rollNo);
+		}
+	}
 	
 }
