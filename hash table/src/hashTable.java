@@ -51,6 +51,8 @@ public class hashTable {
 		if(have) {
 			int key=toHashCode(rollNo);
 			arr[key].deleteData(rollNo);
+			totalStudents--;
+			return true;
 		}
 	}
 	
