@@ -54,6 +54,14 @@ public class hashTable {
 			totalStudents--;
 			return true;
 		}
+		else {
+			return false;
+		}
 	}
 	
+	public void showAllStd() {
+		for(int i=0;i<arr.length ;i++) {
+			arr[i].selectAll();
+		}
+	}
 }
