@@ -8,7 +8,7 @@ public class student {
 	public student(String n,int a,String s) {
 		this.name=n;
 		this.age=a;
-		this.school=s;
+		this.roll_no=s;
 	}
 	
 	public String  getName(String n) {
@@ -23,21 +23,16 @@ public class student {
 	public void setAge(int a) {
 		this.age=a;
 	}
-	public String getSchool() {
-		return school;
-	}
-	public void setSchool(String s) {
-		this.school=s;
-	}
-	public void getPersonInfo() {
-		System.out.println("My name is "+this.name +"My age is "+this.age+"My school is "+this.school);
-		
-	}
-	public void setRollNo(String rollNo) {
-		this.roll_no=rollNo;
-	}
 	public String getRollNo() {
 		return roll_no;
 	}
+	public void setRollNo(String s) {
+		this.roll_no=s;
+	}
+	public void getPersonInfo() {
+		System.out.println("My name is "+this.name +"My age is "+this.age+"My roll no is "+this.roll_no);
+		
+	}
+	
 
 }

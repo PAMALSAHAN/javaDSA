@@ -13,7 +13,7 @@ public class LinkList {
 		h.value=null;
 	}
 	
-	public boolean insert(student s) {
+	public boolean insert(student s) {  
 		node p=new node();
 		p.value=s;
 		p.next=h.next;  //mehtanadi wenne aluth node ekak mulata set wena eka thamai

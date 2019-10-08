@@ -5,7 +5,7 @@ public class hashTable {
 	private int totalStudents;
 	
 	public hashTable() {
-		size=1000;
+		size=97;
 		arr=new LinkList[size];
 	}
 	
@@ -61,7 +61,11 @@ public class hashTable {
 	
 	public void showAllStd() {
 		for(int i=0;i<arr.length ;i++) {
-			arr[i].selectAll();
+			
+			if(arr[i]!=null) { // null pointer exeption ekak enawa meka ain karama 
+				arr[i].selectAll(); 
+			}
+			
 		}
 	}
 }
