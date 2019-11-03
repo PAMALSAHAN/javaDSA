@@ -1,0 +1,43 @@
+=========================OOP CONSEPTS=================================================
+1.INHERETANCE
+2.
+
+
+===============================INHERITANCEE================================
+
+
+mekedi wenne code eka reuse wena eka
+apita parent class eke tina attributes and methods use karannath puluwan
+ewagema new methods and attributes use karannath puluwan.
+
+WHY WE USE INHERITANCE
+	basically for code reuse
+	for method overwriding 
+	
+mekedi EXTEND kiyala key word ekak use karanawa.
+	eg-    public class childclass extends parentclass
+			keep that on mind 
+			
+TYPES OF INHERITANCE 
+	mekedi 3 types of inheritance tinawa
+	1.single           me tika thamai java wala tina inheritance
+	2.multilevel
+	3.Hierarchical
+		multiple  hybrid inheritance java valadi use wenne naha.
+		diamond effect eka mathak karanna.(diamaond effect kiyala addinne hybrid inheritance eka thamai)
+		
+WHY MULTIPLE INHERITANCE IS NOT SUPPORTED IN JAVA
+	mekidi wenne api hithamu  A B C class tinawa kiyala 
+				A      B
+				 \    /
+					c      mekedi  run() kiyala function ekak A and B ta tibbama eka C tath enawa.C walin run call kaloth mona 
+					run ekada call wenne.so there is an ambuguity.so to reduce the complexity and simplyfy the language.
+
+=============================AGGREGATION====================================================================
+
+	mekide wenne class ekak athule thawath class ekaka object ekak use wena eka.
+		eg- class person ekate api Address address kiyala object ekak haduwai kiyala kiyamu.
+			address eke attrubutes widihata lane,street gannawa.ita passe ekenn object ekak hadala e object eka person ekata pass 
+			karana eka thama karanne. 
+		
+		
