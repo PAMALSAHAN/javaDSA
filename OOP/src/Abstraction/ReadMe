@@ -10,3 +10,21 @@ abstraction in java two types
  	2.static method tiyenna puluwan
  	3.constructors tiyenna puluwan
  	
+ JAVA INTERFACES
+ 	it has static constant and abstract methods
+ 	there can be only having abstract method
+ 	
+ 	it achieve lose coupling
+ 	support the functionality of inheritance
+ 	
+ 	java 8 wala default and static thiyenna puluwan
+ 	
+ 	interface pamal{ 
+ 	public static final int min =5;
+ 	public abstract void print();
+ 	
+ RELATIONSHIP BETWEEN INTERFACE AND CLASS
+ 	child class extends parentclass
+ 	child class implements interface
+ 	interface extends interface
+ 	}
