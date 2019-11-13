@@ -27,4 +27,14 @@ abstraction in java two types
  	child class extends parentclass
  	child class implements interface
  	interface extends interface
- 	}
+ 
+ JAVA 8 STATIC METHOD IN INTERFACE
+ 	static method interface eke hadala interface eke ewa declare karanna 
+ 	puluwan.ewata body ekak tiyenawa.
+ 	
+ 
+ MARKER OR TAGED INTERFACES
+ 	kisima method ekak naththam ekata kiyanawa maker or taged interface ekak kiyala
+ 	
+ NESTED INTERFACE
+ 	 meka nested class waladi thami use karanne.
