@@ -1,9 +1,9 @@
 package Polymorphism;
 
-class Mamal{
+class asiri{
 	String color="blue";
 }
-class dog extends Mamal{
+class dog extends asiri{
 	String color="red";
 	
 	void printColor() {
