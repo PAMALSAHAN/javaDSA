@@ -11,7 +11,7 @@ public class main {
 		}
 		else {
 			System.out.println(num);
-			//printNumber(num-l);
+			//printNumber(num-l);  //0112589747 hawlock town 0114373606 grand road chinese class 0771250021 excution institution
 		}
 	}
 }
